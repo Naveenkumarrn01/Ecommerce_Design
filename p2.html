@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo" width="125px" />
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px" alt="Cart" />
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" alt="Menu" />
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Single Product Details -->
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <p class="top">Home/T-shirt</p>
+                    <img src="images/gallery-1.jpg" alt="Main view of Red printed T-shirt" width="100%" id="productImg" />
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/gallery-1.jpg" alt="View 1" class="small-img" />
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-2.jpg" alt="View 2" class="small-img" />
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-3.jpg" alt="View 3" class="small-img" />
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-4.jpg" alt="View 4" class="small-img" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h1>Red Printed T-shirt by HRX</h1>
+                    <h4>&#8377;499</h4>
+                    <label for="size-select">Choose a size:</label>
+                    <select id="size-select">
+                        <option value="l">L</option>
+                        <option value="m">M</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                        <option value="xxxl">XXXL</option>
+                    </select>
+                    <input type="number" value="1" min="1" />
+                    <button type="button" class="btn">Add to cart</button>
+                    <h3>Product Details</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ducimus labore perferendis...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products Section -->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2><em><strong>Related Products</strong></em></h2>
+               <a href="product.html"><p>View more</p></a> 
+            </div>
+        </div>
+
+        <div class="small-container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/product-3.jpg" alt="Red Printed T-Shirt" />
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>&#8377;499</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-4.jpg" alt="Red Printed T-Shirt" />
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>&#8377;499</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/product-6.jpg" alt="Red Printed T-Shirt" />
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>&#8377;499</p>
+                </div>
+                <!-- Repeat for other products -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download Our App for Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="Play Store" />
+                        <img src="images/app-store.png" alt="App Store" />
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="Logo" />
+                    <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to the many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Posts</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <p class="copyright">Copyright 2024</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!-- JavaScript for Product Gallery -->
+    <script>
+        var productImg = document.getElementById("productImg");
+        var small_img = document.getElementsByClassName("small-img");
+
+        small_img[0].onclick = function() {
+            productImg.src = small_img[0].src;
+        }
+
+        small_img[1].onclick = function() {
+            productImg.src = small_img[1].src;
+        }
+
+        small_img[2].onclick = function() {
+            productImg.src = small_img[2].src;
+        }
+
+        small_img[3].onclick = function() {
+            productImg.src = small_img[3].src;
+        }
+    </script>
+</body>
+</html>
